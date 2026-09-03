@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>όλα για σένα</title>
+
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+
+    <!-- PIXEL PINK BACKGROUND -->
+
+    <div class="pixel-background">
+        <div class="pixel-wave wave-1"></div>
+        <div class="pixel-wave wave-2"></div>
+        <div class="pixel-wave wave-3"></div>
+        <div class="pixel-wave wave-4"></div>
+
+        <div class="pixel-sparkles">
+            <span>✦</span>
+            <span>✧</span>
+            <span>·</span>
+            <span>✦</span>
+            <span>˚</span>
+            <span>✧</span>
+        </div>
+    </div>
+
+
+    <!-- =========================
+         MONTHSARY INTRO
+    ========================== -->
+
+    <div id="monthsaryIntro">
+
+        <div class="intro-pixel-hearts">
+            <span>♥</span>
+            <span>✦</span>
+            <span>♡</span>
+            <span>♥</span>
+            <span>✧</span>
+            <span>♡</span>
+            <span>✦</span>
+            <span>♥</span>
+        </div>
+
+        <div class="intro-box">
+
+            <div class="intro-top">
+                ♥ PLAYER 2 HAS JOINED ♥
+            </div>
+
+            <h1 id="monthsaryText">
+                it's a month well spent
+            </h1>
+
+            <div class="intro-date">
+                08 · 10 · 2026
+            </div>
+
+            <div class="intro-hint">
+                click ♡
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- BACKGROUND MUSIC -->
+
+    <audio id="backgroundMusic" loop>
+        <source src="img/cherry.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <!-- =========================
+         FLOATING HEARTS
+    ========================== -->
+
+    <div class="hearts">
+        <span>♡</span>
+        <span>♥</span>
+        <span>♡</span>
+        <span>♥</span>
+        <span>♡</span>
+        <span>♥</span>
+        <span>♡</span>
+    </div>
+
+
+    <!-- =========================
+         FLOATING THOUGHTS
+    ========================== -->
+
+    <div id="thoughtBubbles"></div>
+
+
+    <!-- =========================
+         TIMER
+    ========================== -->
+
+    <div class="timer-wrapper" id="timerWrapper">
+
+        <div class="timer-title">
+            we've been together for
+        </div>
+
+        <div class="timer">
+
+            <div class="time-unit">
+                <span id="days">0</span>
+                <small>days</small>
+            </div>
+
+            <div class="colon">:</div>
+
+            <div class="time-unit">
+                <span id="hours">00</span>
+                <small>hours</small>
+            </div>
+
+            <div class="colon">:</div>
+
+            <div class="time-unit">
+                <span id="minutes">00</span>
+                <small>minutes</small>
+            </div>
+
+            <div class="colon">:</div>
+
+            <div class="time-unit">
+                <span id="seconds">00</span>
+                <small>seconds</small>
+            </div>
+
+        </div>
+
+        <div class="timer-date">
+            since August 10, 2026 ♥
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         MAIN
+    ========================== -->
+
+    <main>
+
+        <!-- =====================
+             INTRO
+        ====================== -->
+
+        <section class="content">
+
+            <h1>
+                check our little corner ♥
+            </h1>
+
+            <p>
+                scroll down and see what i've made for you
+            </p>
+
+            <div class="scroll-hint">
+                ↓
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FOUR QUADRANTS
+        ========================== -->
+
+        <section class="quadrants" id="quadrants">
+
+
+            <!-- =====================
+                 OUR SONGS
+            ====================== -->
+
+            <div class="quadrant songs" data-section="songs">
+
+                <div class="quadrant-content">
+
+                    <span class="quadrant-icon">
+                        ♫
+                    </span>
+
+                    <h2>
+                        playlist
+                    </h2>
+
+                    <p>
+                        songs that remind me of you
+                    </p>
+
+                </div>
+
+
+                <div class="fullscreen-content">
+
+                    <button class="close-section">
+                        ×
+                    </button>
+
+                    <span class="big-icon">
+                        ♫
+                    </span>
+
+                    <h2>
+                        ♥ songs
+                    </h2>
+
+                    <p>
+                        that reminds me of u
+                    </p>
+
+                    <div class="spotify-placeholder">
+
+                        <p>
+                            ♡  just a playlist  ♡
+                        </p>
+
+                        <span>
+                            <iframe
+                                src="https://open.spotify.com/embed/playlist/7uflsIi9UQsfThZeXfF7bh?utm_source=generator"
+                                frameborder="0"
+                                allowfullscreen
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy">
+                            </iframe>
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =====================
+                 FOR YOU
+            ====================== -->
+
+            <div class="quadrant letter" data-section="letter">
+
+                <div class="quadrant-content">
+
+                    <span class="quadrant-icon">
+                        ♡
+                    </span>
+
+                    <h2>
+                        for you
+                    </h2>
+
+                    <p>
+                        a letter from me
+                    </p>
+
+                </div>
+
+
+                <div class="fullscreen-content">
+
+                    <button class="close-section">
+                        ×
+                    </button>
+
+                    <div class="letter-intro">
+                        <p>
+                            a little something for you ♡
+                        </p>
+                    </div>
+
+                    <div class="card-wrapper" id="cardWrapper">
+
+                        <div class="card">
+
+                            <div class="card-back">
+                                <span class="card-back-heart">♡</span>
+                                <p class="card-postscript">
+                                    P.S. i cant give u a physical handwritten letter <br> so i made a font out of my handwriting <br> just because its the closest thing i can give you rn :>
+                                </p>
+                            </div>
+
+                            <div class="card-front">
+
+                                <div class="card-content">
+
+                                    <span class="card-heart">
+                                        ♡
+                                    </span>
+
+                                    <h3>
+                                        for you
+                                    </h3>
+
+                                    <p class="letter-text">
+                                        my dearest, <br><br>
+
+                                        I made this little corner of the internet just for you and for it to carry our memories. Thank you for being part of my life and for making my ordinary days feel a little more special. I may be lacking on some other ways but I'll always thrive on doing better.
+                                    </p>
+
+                                    <p class="letter-text">
+                                        I love you ♡
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =====================
+                 MEMORIES
+            ====================== -->
+
+            <div class="quadrant memories" data-section="memories">
+
+                <div class="quadrant-content">
+
+                    <span class="quadrant-icon">
+                        ♧
+                    </span>
+
+                    <h2>
+                        memories
+                    </h2>
+
+                    <p>
+                        little pieces of us
+                    </p>
+
+                </div>
+
+
+                <div class="fullscreen-content">
+
+                    <button class="close-section">
+                        ×
+                    </button>
+
+                    <span class="big-icon">
+                        ♡
+                    </span>
+
+                    <h2>
+                        our memories ♡
+                    </h2>
+
+                    <p>
+                        some of my favorite moments with you
+                    </p>
+
+                    <div class="photo-gallery">
+
+                        <div class="photo photo-one">
+                            <video
+                                src="img/2.mov"
+                                autoplay
+                                loop
+                                muted
+                                playsinline>
+                            </video>
+                        </div>
+
+                        <div class="photo photo-two">
+                            <video
+                                src="img/2.mp4"
+                                autoplay
+                                loop
+                                muted
+                                playsinline>
+                            </video>
+                        </div>
+
+                        <div class="photo photo-three">
+                            <div>
+                                <img
+                                    src="img/1.png"
+                                    alt="our memory">
+                            </div>
+                        </div>
+
+                        <div class="photo photo-four">
+                            <div>
+                                <img
+                                    src="img/3.png"
+                                    alt="our memory">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =====================
+                 LITTLE THINGS
+            ====================== -->
+
+            <div class="quadrant little-things">
+
+
+                <!-- NORMAL QUADRANT PREVIEW -->
+
+                <div class="drawing-preview">
+
+                    <div class="drawing-preview-heart">
+                        ♡
+                    </div>
+
+                    <h2>
+                        leave something here
+                    </h2>
+
+                    <p>
+                        draw me something?
+                    </p>
+
+                </div>
+
+
+                <!-- DRAWING MODE -->
+
+                <div class="fullscreen-content drawing-fullscreen">
+
+                    <div class="drawing-interface">
+
+                        <div class="drawing-header">
+
+                            <h2>
+                                ♡ draw something ♡
+                            </h2>
+
+                            <p>
+                                i added this just because u might like it
+                            </p>
+
+                        </div>
+
+
+                        <div class="drawing-tools">
+
+                            <label class="color-picker">
+
+                                <span>
+                                    color
+                                </span>
+
+                                <input
+                                    type="color"
+                                    id="drawingColor"
+                                    value="#e994b4">
+
+                            </label>
+
+
+                            <label class="brush-size">
+
+                                <span>
+                                    brush
+                                </span>
+
+                                <input
+                                    type="range"
+                                    id="brushSize"
+                                    min="1"
+                                    max="30"
+                                    value="5">
+
+                            </label>
+
+
+                            <button id="eraserBtn" type="button">
+                                eraser
+                            </button>
+
+                            <button id="undoBtn" type="button">
+                                undo
+                            </button>
+
+                            <button id="clearCanvas" type="button">
+                                clear
+                            </button>
+
+                        </div>
+
+
+                        <div class="drawing-area">
+                            <canvas id="drawingCanvas"></canvas>
+                        </div>
+
+
+                        <button
+                            id="saveDrawing"
+                            class="save-drawing"
+                            type="button">
+                            save your little masterpiece ♡
+                        </button>
+
+                    </div>
+
+
+                    <button class="close-section" type="button">
+                        ×
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- HIDDEN SECRET HEART -->
+
+    <button
+        id="secretHeart"
+        class="secret-heart"
+        aria-label="secret heart">
+        ♡
+    </button>
+
+
+    <div id="secretMessage" class="secret-message">
+
+        <div class="secret-card">
+
+            <button
+                id="closeSecret"
+                class="close-secret">
+                ×
+            </button>
+
+            <div class="secret-sparkles">
+                ✦ ♡ ✦
+            </div>
+
+            <p class="secret-whisper">
+                there's nothing much here but
+            </p>
+
+            <h2>
+                u found it
+            </h2>
+
+            <p class="secret-text">
+                i love you more than<br>
+                you probably realize.
+            </p>
+
+            <div class="secret-bottom">
+                ♡ · ✦ · ♡
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="home.js"></script>
+
+</body>
+
+</html>

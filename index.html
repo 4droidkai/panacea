@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>όλα για σένα</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ========================================
+         FLOATING HEARTS
+    ======================================== -->
+
+    <div class="hearts">
+
+        <span>♡</span>
+        <span>♥</span>
+        <span>♡</span>
+        <span>♥</span>
+        <span>♡</span>
+        <span>♥</span>
+        <span>♡</span>
+
+    </div>
+
+
+    <!-- ========================================
+         PASSWORD CARD
+    ======================================== -->
+
+    <div class="card">
+
+        <div class="big-heart">♡</div>
+
+
+        <h1>
+            something special awaits...
+        </h1>
+
+
+        <p class="subtitle">
+
+            This little place is only for you.
+
+            <br>
+
+            Do you know the secret?
+
+        </p>
+
+
+        <div class="password-box">
+
+            <input
+                type="password"
+                id="password"
+                placeholder="enter the password..."
+                autocomplete="off"
+            >
+
+
+            <button
+                type="button"
+                onclick="checkPassword()"
+            >
+                ♥
+            </button>
+
+        </div>
+
+
+        <p
+            class="error"
+            id="error"
+        >
+            that's not it... try again ♡
+        </p>
+
+    </div>
+
+
+
+    <!-- ========================================
+         PASSWORD SCRIPT
+    ======================================== -->
+
+    <script>
+
+        const correctPassword = "0810";
+
+
+        function checkPassword() {
+
+            const input =
+                document.getElementById("password");
+
+            const error =
+                document.getElementById("error");
+
+
+            /* ====================================
+               CORRECT PASSWORD
+            ==================================== */
+
+            if (input.value === correctPassword) {
+
+                error.classList.remove("show");
+
+
+                /*
+                 * Give home.html permission to open.
+                 */
+
+                sessionStorage.setItem(
+                    "passwordUnlocked",
+                    "true"
+                );
+
+
+                /*
+                 * Tell home.html to start
+                 * the background music.
+                 */
+
+                sessionStorage.setItem(
+                    "startMusic",
+                    "true"
+                );
+
+
+                /*
+                 * Keep your existing unlocking
+                 * animation.
+                 */
+
+                document.body.classList.add(
+                    "unlocking"
+                );
+
+
+                setTimeout(() => {
+
+                    /*
+                     * replace() prevents the password
+                     * page from being kept in browser
+                     * history.
+                     */
+
+                    window.location.replace(
+                        "home.html"
+                    );
+
+                }, 900);
+
+            }
+
+
+            /* ====================================
+               WRONG PASSWORD
+            ==================================== */
+
+            else {
+
+                error.classList.add("show");
+
+                input.value = "";
+
+
+                /*
+                 * Shake the password box.
+                 */
+
+                input.animate(
+
+                    [
+                        {
+                            transform:
+                                "translateX(0)"
+                        },
+
+                        {
+                            transform:
+                                "translateX(-6px)"
+                        },
+
+                        {
+                            transform:
+                                "translateX(6px)"
+                        },
+
+                        {
+                            transform:
+                                "translateX(-5px)"
+                        },
+
+                        {
+                            transform:
+                                "translateX(0)"
+                        }
+                    ],
+
+                    {
+                        duration: 300
+                    }
+
+                );
+
+            }
+
+        }
+
+
+
+        /* ========================================
+           ENTER KEY
+        ======================================== */
+
+        document
+            .getElementById("password")
+            .addEventListener(
+                "keydown",
+                function(event) {
+
+                    if (event.key === "Enter") {
+
+                        checkPassword();
+
+                    }
+
+                }
+            );
+
+    </script>
+
+
+</body>
+
+</html>
